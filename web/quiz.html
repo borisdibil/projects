@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moje hobby</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" title="style">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <script src="scripts/style_script.js"></script>
+    <script src="scripts/comments_script.js"></script>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>WORLDBUILDING</h1>
+
+        </div>
+        <menu class="links">
+            <li><a href="index.html">Main page</a></li>
+            <li><a href="worlds.html">My Worlds</a></li>
+            <li><a href="quiz.html">Create world</a></li>
+
+        </menu>
+        <div class="maintext">
+            <div class="style_change">
+                <b>Change style:</b>
+                <button onclick="FontStyle1()" class="button_style">Font Style 1</button>
+                <button onclick="FontStyle2()" class="button_style">Font Style 2</button>
+                <button onclick="FontStyle3()" class="button_style">Font Style 3</button>
+                <button onclick="TextColor1()" class="button_style">Text Color 1</button>
+                <button onclick="TextColor2()" class="button_style">Text Color 2</button>
+                <button onclick="TextColor3()" class="button_style">Text Color 3</button>
+            </div>
+            <div class="intro">
+                <p><b> Here you can create your own world!</b></p>
+            </div>
+            <p style="width:fit-content; border-style:solid; background-color:goldenrod">If you need help: <a href="https://kindlepreneur.com/world-building/" target="blank">Click me!</a></p>
+            <div class="svg">
+                <svg>
+                    <defs>
+                        <linearGradient id="grad1">
+                            <stop offset="0%" stop-color="#f7fa1b" />
+                            <stop offset="100%" stop-color="#e16a0c" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="120" cy="70" rx="120" ry="50" fill="url(#grad1)" />
+                    <text fill="black" font-size="35" font-family="Verdana" x="15" y="80">Be creative!</text>
+                </svg>
+            </div>
+            
+            <form id="create_world" action="/create_world.php" method="post" enctype="multipart/form-data">
+                <label for="world_name">How your world should be called:</label>
+                <input type="text" id="world_name" name="world_name" placeholder="Name your world"><br>
+
+                <p>What is the genre of your world:</p>
+                <input type="radio" id="world_genre_fantasy" name="world_genre" value="Fantasy" />
+                <label for="world_genre_fantasy">Fantasy</label>
+                <input type="radio" id="world_genre_scifi" name="world_genre" value="Sci-Fi" />
+                <label for="world_genre_scifi">Sci-Fi</label>
+                <input type="radio" id="world_genre_modern" name="world_genre" value="Modern" />
+                <label for="world_genre_modern">Modern</label> <br> <br>
+
+                <label for="world_magic" style="text-align:left">What magic system will there be:</label>
+                <select id="world_magic" name="world_magic">
+                    <option value="No magic">No magic</option>
+                    <option value="Hard magic system">Hard magic system</option>
+                    <option value="Soft magic system">Soft magic system</option>
+                </select> <br><br>
+
+                <label for="world_main_race" style="text-align:left">What will be the main race in your world:</label>
+                <input id="world_main_race" list="world_races" name="world_main_race" />
+                <datalist id="world_races">
+                    <option value="Human">
+                    <option value="Orc">
+                    <option value="Elf">
+                    <option value="Dwarf">
+                    <option value="Dragonborn">
+                    <option value="Syrene">
+                    <option value="Halfling">
+                    <option value="Gnome">
+                    <option value="Demon">
+                </datalist> <br> <br>
+
+                <label for="world_inspiration" style="text-align:left">What is your inspiration:</label>
+                <select id="world_inspiration" name="world_inspiration">
+                    <option value="Other">Other</option>
+                    <option value="Books">Famous books</option>
+                    <option value="Films">Exquisite films</option>
+                    <option value="Games">Favourite games</option>
+                    <option value="Folklore">Folklore and history</option>
+                    <option value="Dreams">My dreams</option>
+                </select> <br><br>
+
+                <label for="world_number">How many worlds have you created:</label>
+                <select id="world_number" name="world_number">
+                    <option value="0">It's my first world</option>
+                    <option value="2-5">2-5</option>
+                    <option value="5-10">5-10</option>
+                    <option value="10+">More than 10 worlds</option>
+                </select> <br><br>
+
+                    <label for="world_description">Describe your world in as much details as you want:</label>
+                    <br>
+                    <textarea id="world_description" name="world_description"></textarea>
+                    <br>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+            </form>
+            <h3>Comments</h3>
+            <div class="comments" id="comments">
+                <p><a style="background-color:mediumpurple; margin-right:20px">@han.bd2006</a> Wow, you are so cool!</p>
+                <p><a style="background-color: mediumpurple; margin-right: 20px">@user2587160</a> I wish I could create such a good world as you did...</p>
+                <p><a style="background-color: mediumpurple; margin-right: 20px">@noisy.creature</a> How do I create my world?</p>
+            </div>
+            <div class="upload_comment">
+                <label for="world_name">Nickname</label>
+                <input type="text" id="nickname" placeholder="Type your nickname">
+                <label for="your_comment" style="margin-left:20px">Write your comment:</label>
+                <input type="text" id="your_comment" placeholder="Type your comment">
+                <input type="submit" value="Send a comment" onclick="Upload_Comment()" style="margin-top:10px; margin-bottom:10px; margin-left:10px">
+            </div>
+            <div class="no_js">No JavaScript enabled, cannot write a comment</div>
+
+        </div>
+        <footer style="text-align:right; font-size:15px; margin-right:10px">
+            <p>Author: Danylo Avdiienko</p>
+        </footer>
+    </div>
+
+</body>
+</html>

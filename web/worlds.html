@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moje hobby</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" title="style">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="jquery_style.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $(document).tooltip();
+        });
+    </script>
+    <script src="scripts/style_script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>WORLDBUILDING</h1>
+        </div>
+        <menu class="links">
+            <li><a href="index.html">Main page</a></li>
+            <li><a href="worlds.html">My Worlds</a></li>
+            <li><a href="quiz.html">Create world</a></li>
+
+        </menu>
+        <a href="#top"></a>
+        <div class="maintext">
+            <div class="style_change">
+                <b>Change style:</b>
+                <button onclick="FontStyle1()" class="button_style">Font Style 1</button>
+                <button onclick="FontStyle2()" class="button_style">Font Style 2</button>
+                <button onclick="FontStyle3()" class="button_style">Font Style 3</button>
+                <button onclick="TextColor1()" class="button_style">Text Color 1</button>
+                <button onclick="TextColor2()" class="button_style">Text Color 2</button>
+                <button onclick="TextColor3()" class="button_style">Text Color 3</button>
+            </div>
+            <div class="intro">
+                <p><b>Here you can find all the worlds created by me, built by me and brought to life by me</b></p>
+            </div>
+            <div>
+                <h3 style="text-align: center; font-family:MoriaCitadel; font-size: 30px">
+                    Viliya
+                </h3>
+                <div class="magnify">
+                    <div class="magnifier" style="background-image: url(images/map1.jpeg);"></div>
+                    <div class="magnified">
+                    </div>
+                    <script src="scripts/magnifier_plugin.js"></script>
+                </div>
+                <img id ="map" src="images/map1.jpeg" alt="Map of Halostynnia" width="800" height="525">
+
+                <p>
+                    Viliya is a fantasy-medieval realm with two distinct continents, Garaskar and Olia, separated by the island of Garakz.
+                    Garaskar, the "old world," is a land of ancient origins, filled with diverse landscapes such as towering mountains, tropical forests,
+                    vast deserts, and mighty rivers. It is home to the dominant Khiz Empire in the north, the mountainous Kingdom of Qeqe in the central
+                    Gorz range, and the war-torn southern regions where the Brotherhood of Rhek and the Qakicath Empire battle endlessly.
+                </p>
+                <p>
+                    Garakz, the island between the continents, is sparsely populated but renowned for its exclusive garakzon wine, crafted from
+                    fruits that thrive only in its unique environment. The Kingdom of Garakz rules the island.
+                </p>
+                <p>
+                    Olia offers a striking contrast to Garaskar, with its endless green forests, expansive fields, and rich biodiversity.
+                    Once united under a powerful nation, it is now divided into three major khanates—Gurbugant, Gallia, and Olindoria—while its
+                    southern lands are a patchwork of smaller states, with Khovdia being the largest.
+                </p>
+                <p>
+                    Magic exists in Viliya but is rare, with only a few traces of magical phenomena scattered across the world. Ancient relics,
+                    hidden deep within the ruins of forgotten civilizations, are said to hold mysterious powers, and rumors of enchanted creatures
+                    roaming the remote forests of Olia persist among travelers. Some individuals, known as the "Touched," possess minor magical
+                    abilities—often seen as both a blessing and a curse—yet these powers are unpredictable and difficult to control. While the empires
+                    and kingdoms seek to harness these forces, true mastery over magic remains an elusive and dangerous pursuit.
+                </p>
+
+
+                <div class="touched_name">
+                    <img src="images/touched.png" alt="Hundreth" title="Hundreth, the Touched" style="width: 180px; height:180px; ">
+                </div>
+                <p>
+                    Hundreth was one of the most powerful " Touched" in Viliya’s history, a solitary figure who defied empires and waged a one-man war
+                    against the world. With his unmatched ability to manipulate the elements and bend the forces of nature, he became a force of chaos,
+                    challenging the authority of the Khiz Empire and the southern states alike. Moving through the realms as a shadow, he unleashed his
+                    power to disrupt armies, shatter cities, and alter landscapes. His relentless crusade during the "Shattered Years" left a legacy of
+                    fear and awe, as the scars of his battles still mark the lands he once roamed.
+                </p>
+
+                <div class="monster_name">
+                    <img src="images/monster.jpg" alt="Dolequa Itarakus" title="Dolequa Itarakus, the Insatiable Demon" style="width: 300px; height:200px; ">
+                </div>
+                <p>
+                    Dolequa Itarakus, the "Insatiable Demon," is a towering beast, standing at a height of around 10 meters. It roams the great
+                    hills of Bando in central Olia, moving on two powerful legs—its only limbs. Its entire body is covered in jagged horns that
+                    protrude from its thick hide, giving it a fearsome and grotesque appearance. The creature’s monstrous footsteps send tremors
+                    through the earth, and its bellowing roars echo across the hills, striking terror into anyone who hears them. Elusive and
+                    ferocious, Dolequa Itarakus is a force of nature that leaves devastation in its wake, as no one who crosses its path returns
+                    unscathed.
+                </p>
+
+                <div class="army_name">
+                    <img src="images/army.jpg" alt="Army of Khiz Empire" title="Army of the Khiz Empire" style="width:200px; height:260px">
+                </div>
+                <div class="banner_name">
+                    <img src="images/banner.png" alt="Banner of Khiz Empire" title="Flag of the Khiz Empire" style="width: 200px; height: 210px; background-image: url('images/site_bg2.jpg'); background-size:inherit; ">
+                </div>
+                <p style="margin-top:40px">
+                    The Khiz Empire's army is the most formidable military force in Viliya, a well-disciplined and highly trained legion that
+                    dominates the northern lands of Garaskar. Comprising thousands of heavily armored infantry, mounted cavalry, and elite archers,
+                    it moves as a single, cohesive unit, with strategies honed over centuries of warfare. The army's strength lies in its
+                    adaptability, capable of fighting in the scorching deserts, dense jungles, and rugged mountain passes of Garaskar. Commanded
+                    by experienced generals, each division of the Khiz forces is supported by war machines and siege equipment, making it a
+                    relentless and unstoppable force. Feared across the continent, the sight of their black-and-gold banners strikes terror into
+                    the hearts of their enemies, as the Khiz Empire’s army leaves little chance for victory against those who stand in its path.
+                </p>
+            </div>
+        </div>
+        <p style="text-align:right"> <a href="#top">Return to the begining</a></p>
+        <footer style="text-align:right; font-size:15px; margin-right:10px">
+            <p>Author: Danylo Avdiienko</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+

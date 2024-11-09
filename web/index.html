@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moje hobby</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" title="style">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/dialog_scripts.js"></script>
+    <script src="scripts/style_script.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>WORLDBUILDING</h1>
+        </div>
+        <menu class="links">
+            <li><a href="index.html">Main page</a></li>
+            <li><a href="worlds.html">My Worlds</a></li>
+            <li><a href="quiz.html">Create world</a></li>
+
+        </menu>
+        <a href="#top"></a>
+        <div class="maintext">
+            <div class="style_change">
+                <b>Change style:</b>
+                <button onclick="FontStyle1()" class="button_style">Font Style 1</button>
+                <button onclick="FontStyle2()" class="button_style">Font Style 2</button>
+                <button onclick="FontStyle3()" class="button_style">Font Style 3</button>
+                <button onclick="TextColor1()" class="button_style">Text Color 1</button>
+                <button onclick="TextColor2()" class="button_style">Text Color 2</button>
+                <button onclick="TextColor3()" class="button_style">Text Color 3</button>
+            </div>
+            <div class="intro">
+                <p id="p1">
+                    <b>
+                        Dive into the art of crafting entire universes, from vast landscapes and intricate cultures to detailed
+                        histories and fantastical creatures. This site is a place where imagination knows no bounds, and every
+                        world is a story waiting to be told. Whether you’re a fellow creator or just curious about exploring
+                        new realms, I invite you to join me on this journey of endless possibilities.
+                    </b>
+                </p>
+            </div>
+
+            <h4>Why Worldbuilding?</h4>
+            <p>
+                Worldbuilding is more than just creating maps or naming characters; it’s about weaving together elements that
+                make a universe feel alive. From the lore that shapes civilizations to the ecosystems that sustain them, every detail
+                adds depth and authenticity. For me, it’s a chance to explore the boundaries of my imagination, crafting places that
+                are both familiar and fantastical. It’s a hobby that blends creativity, storytelling, and even a bit of science.
+            </p>
+            <div id="halostynnia_dialog" title="Halostynnia">
+                One of my old unfinished worlds, Halostynnia
+            </div>
+            <img src="images/halostynnia.png" id="halostynnia" width="500" height="257" alt="Halostynnia">
+
+            <div id="poor_girl_dialog" title="Poor girl">
+                Worldbuilding is not only about creating worlds and states, but also is connected with creating characters, who are not always brave
+                knights or beatiful maidens
+            </div>
+            <img src="images/poor_girl.jpg" id="poor_girl" width="257" height="257" alt="Poor girl on the street">
+
+
+            <h4>What You’ll Find Here</h4>
+            <p>
+                This site is a collection of my worldbuilding endeavors. You’ll discover sketches of cities, descriptions of unique species,
+                maps of uncharted lands, and the legends that breathe life into these worlds. Whether you’re interested in the process of designing
+                magic systems, the politics of fictional empires, or the history of mythical creatures, there’s something here for every imagination
+                enthusiast.
+            </p>
+
+            <div id="mystical_dialog" title="Mystic">
+                Leiana, the Mystic (some sort of magician from one of my old unfinished worlds)
+            </div>
+            <img src="images/mystical_girl.jpg" id="mystical" width="257" height="257" alt="Mystical girl">
+
+            <div id="demon_dialog" title="Halfdemon">
+                Sometimes I use AI for creating images for inspiration
+            </div>
+            <img src="images/halfdemon_image.jpg" id="demon" width="257" height="257" alt="Halfdemon">
+
+            <h4>Join the Adventure</h4>
+            <p>
+                Feel free to explore, share your thoughts, and maybe even contribute your ideas. Worldbuilding is a collaborative and evolving
+                experience, and I’m excited to see how these universes grow with each new perspective. Let’s build worlds together!
+            <p>
+            </p>
+            <h3 style="text-align:center">Gallery</h3>
+            <div class="gallery" style="text-align:center">
+                <img id="image1" src="images/army.jpg" alt="Army" onclick="openFullscreen1()" width="150" height="150" style="margin-left:20px">
+                <img id="image2" src="images/poor_girl.jpg" alt="Poor girl" onclick="openFullscreen2()" width="150" height="150" style="margin-left:20px">
+                <img id="image3" src="images/mystical_girl.jpg" alt="Mystic" onclick="openFullscreen3()" width="150" height="150" style="margin-left:20px">
+                <img id="image4" src="images/touched.png" alt="Touched" onclick="openFullscreen4()" width="150" height="150" style="margin-left:20px">
+                <img id="image5" src="images/halfdemon_image.jpg" alt="Demon" onclick="openFullscreen5()" width="150" height="150" style="margin-left:20px">
+                <script src="scripts/fullscreen.js"></script>
+            </div>
+        </div>
+        <p style="text-align:right"> <a href="#top">Return to the begining</a></p>
+        <footer style="text-align:right; font-size:15px; margin-right:10px">
+            <p>Author: Danylo Avdiienko</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
